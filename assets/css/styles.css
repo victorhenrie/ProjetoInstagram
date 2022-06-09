@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  height: 54px;
+  border-bottom: 1px solid #DBDBDB;
+  position: fixed;
+  margin-bottom: 34px;
+}
+
+.top-bar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-bar__logo--icon {
+  height: 20px;
+}
+
+.top-bar__logo--image {
+  height: 29px;
+}
+
+.top-bar__logo--bar {
+  height: 22px;
+  width: 1px;
+  background-color: #DBDBDB;
+  margin: 0 10px 0;
+}
+
+.top-bar__input {
+  height: 28px;
+  width: 215px;
+  border-radius: 3px;
+  background-color: #FAFAFA;
+  color: #979797;
+  font-size: 12px;
+  border: 1px solid #DBDBDB;
+  text-align: center;
+}
+
+.top-bar__navegation-icons {
+  width: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content {
+  margin-left: 215px;
+}
+
+.stories-box {
+  width: 614px;
+  height: 118px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  margin: 0 0 24px;
+}
+
+.stories-box__perfil--image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stories-box__perfil--image-backgroud {
+  width: 66px;
+  height: 66px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.posts__post-box {
+  background-color: #FFFFFF;
+  width: 614px;
+  border-radius: 3px;
+  border: 1px solid #DBDBDB;
+  margin-bottom: 60px;
+}
+
+.posts__post-box--up-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 61px;
+}
+
+.posts__post-box--up-box-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 17px;
+}
+
+.posts__post-box--up-box-profile-name {
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.posts__post-box--up-box-options {
+  margin-right: 18px;
+}
+
+.posts__post-box--up-box-profile-photo {
+  width: 32px;
+  height: 32px;
+}
+
+.posts__post-box--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 14px 18px;
+}
+
+.posts__post-box--icons-interact {
+  width: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.posts__post-box--interact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px 14px 17px;
+}
+
+.posts__post-box--interact-text {
+  margin-left: 5px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=styles.css.map */
