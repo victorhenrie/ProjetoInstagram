@@ -29,7 +29,7 @@ body {
         &--bar{
             height: 22px;
             width: 1px;
-            background-color: #DBDBDB;
+            background-color: $border-color;
             margin: 0 10px 0;
         }
     }
@@ -60,9 +60,6 @@ body {
     display: flex;
     margin: 0 auto;
 }
-// .content {
-//  margin: 0 auto;
-// }
 
 .stories-box {
     width: 614px;
@@ -76,6 +73,11 @@ body {
     padding-left: 18px;
     margin: 0 0 24px;
     box-sizing: border-box;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
     
     &__perfil {
         display: flex;
@@ -87,10 +89,11 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url(../images/stories_background.jpg);
+            background-image: url(../images/stories_background.png);
             background-size: cover;
             width: 64px;
             height: 64px;
+            margin-right: 12px;
         }
     }
 }
@@ -158,8 +161,11 @@ body {
 
 .sidebar {
     width: 300px;
+    height: 500px;
     margin: 111px 0 0 30px;
     font-size: 14px;
+    position: sticky;
+    top: 110px;
 
     &__perfile{
         display: flex;
@@ -206,7 +212,54 @@ body {
     }
 }
 
+#seta {
+    position: absolute;
+    margin-left: 550px;
+}
+
 .blue-color {
-    color: #139EF2;
+    color: $blue;
     font-size: 12px;
+}
+
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+    .top-bar {
+        justify-content: space-between;
+        padding: 0 20px 0 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 614px) {
+    .top-bar {
+        &__logo {
+            &--image {
+                display: none;
+            }
+            &--bar{
+                display: none;
+            }
+        }
+        &__navegation-icons {
+            justify-content: flex-end;
+            width: auto;
+            &--hidden {
+            display: none;
+            }
+        }
+    }
+    .space {
+        height: 54px;
+    }
+    .stories-box {
+        background-color: $backgraund-color;
+        border: 0;
+        margin: 0;
+    }
+    #seta {
+        display: none;
+    }
 }
