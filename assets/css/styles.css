@@ -246,6 +246,7 @@ body {
 }
 
 .posts__post-box--icons {
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
